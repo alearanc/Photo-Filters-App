@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>Photo Filters App
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-div">
+            <img src="./pexels-photo-2662116.jpeg" class="image" id="image">
+        </div>
+        <div class="input-div">
+            <label>Brightness</label>
+            <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="brightness" data-scale="%"><br>
+            <label>Contrast</label>
+            <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="contrast" data-scale="%"><br>
+            <label>Hue Rotate</label>
+            <input type="range" min="0" max="180" value="0" step="1" onchange="applyFilter()" data-filter="hue-rotate" data-scale="deg"><br>
+            <label>Grayscale</label>
+            <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="grayscale" data-scale="%"><br>
+            <label>Sepia</label>
+            <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="sepia" data-scale="%"><br>
+            <label>Invert</label>
+            <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="invert" data-scale="%"><br>
+            <label>Saturate</label>
+            <input type="range" min="1" max="100" value="1" step="1" onchange="applyFilter()" data-filter="saturate" data-scale=""><br>
+            <label>Blur</label>
+            <input type="range" min="0" max="10" value="0" step="1" onchange="applyFilter()" data-filter="blur" data-scale="px"><br>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="/JS/main.js"></script>
+
+</body>
+</html>
